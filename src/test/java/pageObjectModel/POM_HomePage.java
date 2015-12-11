@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class POM_SearchScenario {
+public class POM_HomePage {
 	WebDriver driver = null;
 	@FindBy (id ="srchword")
 	WebElement TextBox_Search;
@@ -13,16 +13,33 @@ public class POM_SearchScenario {
 	@FindBy (css = "input[class = newsrchbtn]")
 	WebElement Button_Search;
 	
+	@FindBy(xpath = "//div[@class='divbooklist']/div/a/img")
+	WebElement link_firstbook;
+	
+	@FindBy(className = "addtocartbtn")
+	WebElement Button_addtocarton;
+	
 	@FindBy(id="find")
 	WebElement valid_search_mesg;
 	
 	@FindBy(css = "p[class='sorrymsg']")
 	WebElement Invalid_search_msg;
 	
-	public POM_SearchScenario(WebDriver driver)
+	public POM_HomePage(WebDriver driver)
 	{
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+	}
+	
+	public void click_firstbook()
+	{
+		link_firstbook.click();
+	}
+	
+	public void click_buynowbutton()
+	{
+		
+		Button_addtocarton.click();
 	}
 	
 	public void Enter_searchword(String Search_Item)

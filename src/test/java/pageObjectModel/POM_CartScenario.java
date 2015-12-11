@@ -7,11 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class POM_CartScenario {
 	WebDriver driver = null;
-	@FindBy(xpath = "//div[@class='divbooklist']/div/a/img")
-	WebElement link_firstbook;
 	
-	@FindBy(className = "addtocartbtn")
-	WebElement Button_addtocarton;
+	
+	
 	
 	@FindBy(xpath=".//*[@id='currentcartdiv']/div/form/div/table[1]/tbody/tr[3]/td/table/tbody/tr/td[2]/input")
 	WebElement textbox_addtocarton;
@@ -39,16 +37,7 @@ public class POM_CartScenario {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void click_firstbook()
-	{
-		link_firstbook.click();
-	}
 	
-	public void click_buynowbutton()
-	{
-		
-		Button_addtocarton.click();
-	}
 
 	public String get_quatity_book()
 	{
@@ -86,10 +75,6 @@ public class POM_CartScenario {
 		link_Signout.click();
 	}
 	
-	public void excute_common_Cartmethods()
-	{
-		click_firstbook();
-		click_buynowbutton();
-	}
+	
 
 }

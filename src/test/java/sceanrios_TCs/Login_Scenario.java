@@ -2,6 +2,7 @@ package sceanrios_TCs;
 
 import generic_component.Base_Class;
 import org.apache.log4j.Logger;
+import org.junit.Assert;
 import org.testng.annotations.Test;
 
 
@@ -28,7 +29,7 @@ public class Login_Scenario extends Base_Class {
 		else
 		{
 			log.error("The invalid login scenario validation has Failed "  + TC_ID+" and "+ Order);
-			assert1.assertFalse(true);
+			Assert.fail();
 		}
 		tear_down();
 		assert1.assertAll();
@@ -53,6 +54,7 @@ public class Login_Scenario extends Base_Class {
 		else
 		{
 			log.error("The valid login scenario validation has Failed "  + TC_ID+" and "+ Order);
+			Assert.fail();
 		}
 		pom_login.Click_SignOut();
 		tear_down();

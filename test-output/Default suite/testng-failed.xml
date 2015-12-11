@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="sceanrios_TCs.Login_Scenario">
+      <class name="sceanrios_TCs.Search_Scenario">
         <methods>
-          <include name="valid_login" invocation-numbers="0"/>
+          <include name="ValidSearch" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- sceanrios_TCs.Login_Scenario -->
+      </class> <!-- sceanrios_TCs.Search_Scenario -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
