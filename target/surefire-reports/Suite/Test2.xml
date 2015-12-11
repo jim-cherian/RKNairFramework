@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="JIM-TI8227" name="sceanrios_TCs.Search_Scenario" tests="4" failures="0" timestamp="11 Dec 2015 10:17:45 GMT" time="109.831" errors="0">
+  <testcase name="InvalidSearch" time="33.44" classname="sceanrios_TCs.Search_Scenario">
+    <skipped/>
+  </testcase>
+  <testcase name="ValidSearch" time="30.864" classname="sceanrios_TCs.Search_Scenario"/>
+  <testcase name="ValidSearch" time="18.901" classname="sceanrios_TCs.Search_Scenario"/>
+  <testcase name="ValidSearch" time="21.868" classname="sceanrios_TCs.Search_Scenario"/>
+</testsuite>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="JIM-TI8227" name="sceanrios_TCs.Login_Scenario" tests="2" failures="0" timestamp="11 Dec 2015 10:15:55 GMT" time="77.883" errors="0">
+  <testcase name="invalid_login" time="35.518" classname="sceanrios_TCs.Login_Scenario">
+    <skipped/>
+  </testcase>
+  <testcase name="valid_login" time="34.176" classname="sceanrios_TCs.Login_Scenario"/>
+</testsuite>
